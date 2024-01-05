@@ -1,0 +1,14 @@
+.page {
+    display: flex;
+    justify-content: center;
+
+    .contact-form {
+        background-color: lightgray;
+        padding: 0.5rem;
+        border: 1px solid gray;
+        width: 90%;
+        max-width: 30rem;
+        display: flex;
+        flex-direction: column;
+    }
+}

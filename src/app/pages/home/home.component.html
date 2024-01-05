@@ -1,0 +1,12 @@
+<div class="page"
+    #page>
+    <div class="images"
+        #images
+        *ngFor="let img of groevieImages; let i = index">
+
+        <img [ngClass]="selectedIndex === i ? 'selected':'unselected'"
+            [src]="img.imgPath"
+            alt=""
+            (click)="getIndex(i)">
+    </div>
+</div>

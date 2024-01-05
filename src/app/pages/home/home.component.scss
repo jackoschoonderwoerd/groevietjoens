@@ -1,0 +1,28 @@
+.page {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    .images {
+        margin: auto;
+        position: relative;
+        max-width: 500px;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            width: calc(100% - 6px);
+            border: 3px solid var(--ochre);
+            opacity: 0;
+        }
+        .selected {
+            opacity: 1;
+            transition: opacity 1000ms ease-in-out;
+        }
+        .unselected {
+            opacity: 0;
+            transition: opacity 1000ms ease-in-out;
+        }
+    }
+}

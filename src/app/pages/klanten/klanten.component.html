@@ -1,0 +1,15 @@
+<div class="page">
+
+    <div class="title">
+        Groevie Tjoens werkte o.a. voor:
+    </div>
+
+    <div class="klanten">
+        <div class="klant"
+            *ngFor="let klant of klanten">
+            <div class="name">{{klant.name}}</div>
+            <img [src]="klant.imgPath"
+                alt="">
+        </div>
+    </div>
+</div>

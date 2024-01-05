@@ -1,0 +1,8 @@
+<mat-nav-list>
+    <a mat-list-item
+        (click)="onCloseSidenav()"
+        *ngFor="let link of links"
+        [routerLink]="link.link">
+        <h4>{{link.name}}</h4>
+    </a>
+</mat-nav-list>

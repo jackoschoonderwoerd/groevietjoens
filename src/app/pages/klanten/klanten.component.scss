@@ -1,0 +1,39 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .title {
+        font-size: 1.3rem;
+        color: #cb9d06;
+    }
+    .klanten {
+        padding: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(6rem, 8rem));
+        justify-content: center;
+        background-color: var(--ochre);
+        gap: 0.5rem;
+        .klant {
+            background-color: white;
+            padding: 0.5rem;
+            // display: flex;
+            // flex-direction: column;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr;
+
+            justify-content: center;
+            align-items: center;
+            .name {
+                // font-size: 1.3rem;
+                letter-spacing: 1.1px;
+            }
+            img {
+                justify-self: center;
+                align-self: center;
+                width: 5rem;
+            }
+        }
+    }
+}

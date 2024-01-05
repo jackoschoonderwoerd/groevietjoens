@@ -1,0 +1,35 @@
+<div class="page">
+
+    <form [formGroup]="contactForm"
+        class="contact-form">
+        <mat-form-field>
+            <label for="full name">full name *</label>
+            <input type="text"
+                matInput
+                formControlName="full name">
+        </mat-form-field>
+        <mat-form-field>
+            <label for="email address">email address *</label>
+            <input type="text"
+                matInput
+                formControlName="email address">
+        </mat-form-field>
+        <mat-form-field>
+            <label for="subject">subject *</label>
+            <input type="text"
+                matInput
+                formControlName="subject">
+        </mat-form-field>
+        <mat-form-field>
+            <label for="message">message *</label>
+            <textarea matInput
+                formControlName="message"
+                cols="30"
+                rows="6">
+            </textarea>
+        </mat-form-field>
+        <button mat-raised-button
+            [disabled]="contactForm.invalid"
+            (click)="onSendMessage()">{{contactForm.invalid ?'please fill out all fields':'send message'}}</button>
+    </form>
+</div>

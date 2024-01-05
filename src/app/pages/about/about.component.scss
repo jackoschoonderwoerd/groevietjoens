@@ -1,0 +1,14 @@
+.page {
+    display: flex;
+    justify-content: center;
+    .content {
+        border-radius: 3px;
+        padding: 0.5rem;
+        background-color: #cb9d06;
+        max-width: 30rem;
+        @media (width > 800px) {
+            font-size: var(--font-size-l);
+            line-height: 1.2em;
+        }
+    }
+}

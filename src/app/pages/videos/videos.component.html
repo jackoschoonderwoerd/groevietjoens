@@ -1,0 +1,38 @@
+<div class="page">
+    <div class="accordion-container">
+
+        <mat-accordion>
+            <mat-expansion-panel *ngFor="let video of videos; let i = index">
+                <mat-expansion-panel-header (click)="onVideoSelected(i)">
+                    <mat-panel-title>
+                        {{video.title}}
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        {{video.subtitle}}
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <div class="content-container">
+
+
+                    <iframe title="vimeo-player"
+                        [src]="video.src|safe"
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+
+                    <!-- <iframe *ngIf="selectedVideo"
+                        title="vimeo-player"
+                        [src]="selectedVideo.src|safe"
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe> -->
+
+
+                    <div class="description">
+                        {{video.description}}
+                    </div>
+                </div>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+</div>
