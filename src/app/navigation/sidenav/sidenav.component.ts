@@ -28,10 +28,10 @@ export class SidenavComponent {
             name: 'over groevie tjoens',
             link: 'about',
         },
-        {
-            name: 'bassist erik schoonderwoerd',
-            link: 'bassist',
-        },
+        // {
+        //     name: 'bassist erik schoonderwoerd',
+        //     link: 'bassist',
+        // },
         {
             name: 'muziek',
             link: 'muziek',

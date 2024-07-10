@@ -1,16 +1,12 @@
 <mat-toolbar>
-    <!-- <button class="menu"
-        mat-icon-button
-        (click)="onMenu()"> -->
+
     <mat-icon class="menu"
         (click)="onMenu()">menu</mat-icon>
-    <!-- </button> -->
-    <!-- <button class="home"> -->
+
     <a class="home"
         routerLink="/home">
         <mat-icon>home</mat-icon>
     </a>
-    <!-- </button> -->
     <div class="active-page">{{activePage}}</div>
     <ul class="nav-list">
         <li>
@@ -23,14 +19,14 @@
                 over groevie tjoens
             </a>
         </li>
-        <li>
+        <!-- <li>
             <a routerLink="/bassist"
                 routerLinkActive="link-active"
                 routerLinkActive="link-active"
                 [routerLinkActiveOptions]="{exact:true}">
                 bassist erik schoonderwoerd
             </a>
-        </li>
+        </li> -->
         <li>
             <a routerLink="/muziek"
                 routerLinkActive="link-active"

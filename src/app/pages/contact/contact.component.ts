@@ -65,7 +65,7 @@ export class ContactComponent implements OnInit {
             from_name: this.contactForm.value['full name'],
             to_name: "jacobus schoonderwoerd",
             from_email: this.contactForm.value['email address'],
-            subject: this.contactForm.value.subject,
+            subject: `${this.contactForm.value.subject} via groevietjoens emailjs`,
             message: this.contactForm.value.message,
         });
         alert('Message has been sent.')

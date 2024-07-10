@@ -26,7 +26,6 @@ export class HeaderComponent implements OnInit {
 
         this.router.events.subscribe((val: any) => {
             if (val && val.url) {
-                console.log(val)
                 const rawActivePage = val.url
                 this.activePage = rawActivePage.substring(1)
             }
